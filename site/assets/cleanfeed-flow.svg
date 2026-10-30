@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 210" fill="none">
+  <g stroke="#183447" stroke-width="1.5" fill="#FCFAF5">
+    <rect x="7" y="40" width="77" height="113" rx="2"/>
+    <rect x="100" y="40" width="77" height="113" rx="2"/>
+    <rect x="193" y="40" width="77" height="113" rx="2"/>
+  </g>
+  <g fill="#183447" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">
+    <text x="20" y="65">BOL</text><text x="113" y="65">MTR</text><text x="206" y="65">INVOICE</text>
+  </g>
+  <g stroke="#C6CFD0" stroke-width="5">
+    <path d="M20 83h50m-50 17h39m-39 17h44m-44 17h28M113 83h50m-50 17h39m-39 17h44m-44 17h28M206 83h50m-50 17h39m-39 17h44m-44 17h28"/>
+  </g>
+  <g stroke="#B77C4B" stroke-width="1.5">
+    <path d="M46 153v14q0 10 10 10h237q12 0 12-12v-58h43M139 153v24M232 153v24m38-80h35m35 3 8 7-8 7"/>
+  </g>
+  <rect x="366" y="28" width="187" height="150" rx="3" fill="#183447"/>
+  <rect x="373" y="35" width="173" height="136" rx="1" fill="#FCFAF5"/>
+  <g fill="#C6CFD0"><path d="M390 53h138v6H390zM390 80h39v6h-39zm54 0h84v6h-84zM390 100h39v6h-39zm54 0h84v6h-84zM390 120h39v6h-39zm54 0h84v6h-84zM390 140h39v6h-39z"/></g>
+  <rect x="444" y="138" width="61" height="10" rx="1" fill="#B77C4B"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 210" fill="none">
+  <path d="M75 21h53c38 0 67 38 67 85s-29 85-67 85H75z" fill="#D2DADD" stroke="#183447" stroke-width="1.5"/>
+  <path d="M112 22c35 17 49 50 49 84s-14 67-49 84m21-165c31 18 44 48 44 81s-13 63-44 81" stroke="#81949E"/>
+  <ellipse cx="75" cy="106" rx="68" ry="85" fill="#A4B5BD" stroke="#183447" stroke-width="1.5"/>
+  <g stroke="#183447" stroke-width="1.2">
+    <ellipse cx="75" cy="106" rx="60" ry="76"/><ellipse cx="75" cy="106" rx="52" ry="67"/><ellipse cx="75" cy="106" rx="44" ry="58"/><ellipse cx="75" cy="106" rx="36" ry="49"/><ellipse cx="75" cy="106" rx="28" ry="40"/>
+  </g>
+  <ellipse cx="75" cy="106" rx="20" ry="31" fill="#183447"/>
+  <path d="M213 106h53m-8-7 9 7-9 7" stroke="#B77C4B" stroke-width="1.5"/>
+  <defs><g id="coil"><path d="M17 26h18c14 0 25 36 25 80s-11 80-25 80H17z" fill="#A4B5BD" stroke="#183447" stroke-width="1.4"/><ellipse cx="35" cy="106" rx="25" ry="80" fill="#B77C4B" stroke="#183447" stroke-width="1.4"/><ellipse cx="35" cy="106" rx="16" ry="64" fill="#D6DEE0" stroke="#183447" stroke-width="1.2"/><ellipse cx="35" cy="106" rx="11" ry="51" fill="#183447"/></g></defs>
+  <use href="#coil" x="280"/><use href="#coil" x="350"/><use href="#coil" x="420"/><use href="#coil" x="490"/>
+</svg>
