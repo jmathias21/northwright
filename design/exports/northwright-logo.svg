@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200"><svg x="280" y="70" width="640" height="760" xmlns="http://www.w3.org/2000/svg" viewBox="150 105 400 475" fill="none">
+  <g fill="#183447">
+    <path d="M332 119h32v36h-32zM298 165h100l11 28H286z"/>
+    <path d="M234 205h228v39h-21v24l-93-57-93 57v-24h-21z"/>
+    <path d="M301 265c-49 18-96 40-136 73l61 165c40 6 79 24 111 56z"/>
+    <path d="M394 265c47 17 94 41 136 72l-61 166c-42 8-80 28-108 56z"/>
+  </g>
+  <path d="m348 236 23 18-22 314-24-314z" fill="#B77C4B"/>
+</svg>
+<text x="600" y="966" text-anchor="middle" font-family="Avenir Next, Avenir, Arial, sans-serif" font-size="86" font-weight="600" letter-spacing="12" fill="#183447">NORTHWRIGHT</text><text x="600" y="1040" text-anchor="middle" font-family="Avenir Next, Avenir, Arial, sans-serif" font-size="29" font-weight="500" letter-spacing="12" fill="#183447">SOFTWARE</text></svg>
