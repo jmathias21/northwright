@@ -50,6 +50,29 @@ If FormSubmit provides an opaque endpoint after activation, the email address in
 
 ## Hosting and domain
 
-The intended public domain is **www.northwrightsoftware.com**. The canonical URL and sitemap use it. Building this repository does not configure DNS, make the domain live, or verify mailbox delivery.
+Production hosting is **Cloudflare Pages** in Jake’s Cloudflare account. The Pages project is `northwright`, with its default address at https://northwright.pages.dev. The primary public domain is **www.northwrightsoftware.com**; the canonical URL and sitemap use it.
 
-The existing owner-private Sites project is `appgprj_6ae3fa6347f08191a6e61a0fd34e122d`; its manifest is retained for the review deployment. Publishing to the public domain requires selecting/configuring a host and its DNS records, enabling the intended public audience, and completing contact-form activation on the live origin. Do not commit deployment credentials.
+[Cloudflare Pages project](https://dash.cloudflare.com/d71cd1d088dcd7da616588e7dc01885f/pages/view/northwright)
+
+Both `northwrightsoftware.com` and `www.northwrightsoftware.com` are attached to the Pages project with SSL enabled. Cloudflare created CNAME records for `@` and `www` pointing to `northwright.pages.dev`.
+
+The zone’s enabled Single Redirect rule, **Northwright — redirect root to www**, uses:
+
+- Match: `(http.host eq "northwrightsoftware.com")`
+- Target: `concat("https://www.northwrightsoftware.com", http.request.uri.path)`
+- Status: `301`; preserve query string: enabled.
+
+Verified at launch: the public homepage loads over HTTPS; HTTP on `www` upgrades to HTTPS; an HTTP apex request to `/privacy.html?launch-check=1` reaches `https://www.northwrightsoftware.com/privacy?launch-check=1`. Pages automatically normalizes HTML page extensions. These are zone settings, not application redirects.
+
+This is a Direct Upload project. To publish changes:
+
+1. Run `npm run check` and `npm run build`.
+2. Open the Cloudflare Pages project and select **Create deployment** → **Production**.
+3. Upload the `dist` folder (or a ZIP whose root contains `index.html` and `assets/`). Do not upload the repository, `.git`, or design references.
+4. Deploy and verify the public website.
+
+Git commits do not automatically deploy this project. Future automated deployments can use Wrangler/CI with this same Direct Upload project. Cloudflare’s built-in Git integration requires a separate Pages project.
+
+The earlier owner-private Sites project is `appgprj_6ae3fa6347f08191a6e61a0fd34e122d`. Its manifest is retained for that review copy; Cloudflare Pages is the production host. Do not republish the review copy when the intent is to update the public website. Do not commit deployment credentials.
+
+Contact-form activation is separate from hosting. Complete activation and a delivery test from the public domain before relying on form emails.
