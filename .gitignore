@@ -7,3 +7,6 @@ node_modules/
 *.log
 .openai/deploy-state.json
 artifacts/
+.dev.vars
+.dev.vars.*
+.wrangler/

@@ -105,12 +105,8 @@
           <p>Have a question about CleanFeed or SlitLogic? Get in touch to learn more or discuss which product fits your operation.</p>
           <a class="text-link contact-email" href="mailto:jake.a.mathias@gmail.com">Prefer email? Write to us <span aria-hidden="true">↗</span></a>
         </div>
-        <form class="contact-form" action="https://formsubmit.co/jake.a.mathias@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Northwright Software — product inquiry">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://www.northwrightsoftware.com/thank-you.html" data-return-url>
-          <input type="hidden" name="_url" value="https://www.northwrightsoftware.com/" data-source-url>
-          <div class="honeypot" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+        <form class="contact-form" action="/api/contact" method="POST">
+          <div class="honeypot" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
           <div class="form-row">
             <div class="field"><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" placeholder="Your name" maxlength="120" required></div>
             <div class="field"><label for="email">Work email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" maxlength="254" required></div>
@@ -120,7 +116,10 @@
             <div class="field"><label for="interest">Interested in <span aria-hidden="true">*</span></label><select id="interest" name="product" required><option value="" disabled selected>Select a product</option><option value="CleanFeed">CleanFeed</option><option value="SlitLogic">SlitLogic</option><option value="Both products">Both products</option><option value="General question">General question</option></select></div>
           </div>
           <div class="field"><label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" placeholder="What would you like to know?" rows="4" maxlength="5000" required></textarea></div>
-          <div class="form-bottom"><button class="button button-copper" type="submit">Send message <span aria-hidden="true">→</span></button><p class="form-note">We’ll use your details to respond to your inquiry.<br><a href="/privacy.html">Contact form privacy</a></p></div>
+          <div id="contact-verification" aria-label="Spam protection"></div>
+          <p class="form-status" role="status" aria-live="polite" id="contact-status"></p>
+          <noscript><p>Please enable JavaScript to use this form, or <a href="mailto:jake.a.mathias@gmail.com">email us directly</a>.</p></noscript>
+          <div class="form-bottom"><button class="button button-copper" type="submit" disabled>Send message <span aria-hidden="true">→</span></button><p class="form-note">We’ll use your details to respond to your inquiry.<br><a href="/privacy.html">Contact form privacy</a></p></div>
         </form>
       </div>
     </section>
